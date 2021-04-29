@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A49C04926399B7A008B1DB2 /* EntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A49C04826399B7A008B1DB2 /* EntityModel.swift */; };
+		1A49C04B2639EAC7008B1DB2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A49C04A2639EAC7008B1DB2 /* SignUpViewController.swift */; };
+		1A49C04E2639F88D008B1DB2 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A49C04D2639F88D008B1DB2 /* SessionManager.swift */; };
+		1A5F456326387F46001F4B96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F456226387F46001F4B96 /* AppDelegate.swift */; };
+		1A5F456526387F46001F4B96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F456426387F46001F4B96 /* SceneDelegate.swift */; };
+		1A5F456A26387F46001F4B96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5F456826387F46001F4B96 /* Main.storyboard */; };
+		1A5F456C26387F48001F4B96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5F456B26387F48001F4B96 /* Assets.xcassets */; };
+		1A5F456F26387F48001F4B96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5F456D26387F48001F4B96 /* LaunchScreen.storyboard */; };
+		1A5F45772638F9F3001F4B96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5F45762638F9F3001F4B96 /* GoogleService-Info.plist */; };
+		1A5F457C26390388001F4B96 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F457B26390388001F4B96 /* SignInViewController.swift */; };
+		1A79FA2D263A4A8D00CF69F6 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A79FA2C263A4A8D00CF69F6 /* FoodViewController.swift */; };
+		1A79FA31263A50C300CF69F6 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A79FA2F263A50C300CF69F6 /* FoodTableViewCell.swift */; };
+		1A79FA32263A50C300CF69F6 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A79FA30263A50C300CF69F6 /* FoodTableViewCell.xib */; };
+		6F7FBBED0D5303C888060F00 /* Pods_CafeNIBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E102EEA32B9F82F6B72F422 /* Pods_CafeNIBM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B02B544A4E5FBD9969F779D /* Pods-CafeNIBM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNIBM.debug.xcconfig"; path = "Target Support Files/Pods-CafeNIBM/Pods-CafeNIBM.debug.xcconfig"; sourceTree = "<group>"; };
+		1A49C04826399B7A008B1DB2 /* EntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModel.swift; sourceTree = "<group>"; };
+		1A49C04A2639EAC7008B1DB2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1A49C04D2639F88D008B1DB2 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		1A5F455F26387F46001F4B96 /* CafeNIBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeNIBM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5F456226387F46001F4B96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A5F456426387F46001F4B96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A5F456926387F46001F4B96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A5F456B26387F48001F4B96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A5F456E26387F48001F4B96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A5F457026387F48001F4B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5F45762638F9F3001F4B96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A5F457B26390388001F4B96 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		1A79FA2C263A4A8D00CF69F6 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		1A79FA2F263A50C300CF69F6 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		1A79FA30263A50C300CF69F6 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
+		61CCBA94F636E420D17F22FC /* Pods-CafeNIBM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNIBM.release.xcconfig"; path = "Target Support Files/Pods-CafeNIBM/Pods-CafeNIBM.release.xcconfig"; sourceTree = "<group>"; };
+		6E102EEA32B9F82F6B72F422 /* Pods_CafeNIBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeNIBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A5F455C26387F46001F4B96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7FBBED0D5303C888060F00 /* Pods_CafeNIBM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A49C04C2639F85E008B1DB2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1A49C04D2639F88D008B1DB2 /* SessionManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1A5F455626387F46001F4B96 = {
+			isa = PBXGroup;
+			children = (
+				1A5F456126387F46001F4B96 /* CafeNIBM */,
+				1A5F456026387F46001F4B96 /* Products */,
+				5979191667E402942DFBCF10 /* Pods */,
+				1D54DB1EA437B8107A0B5F24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A5F456026387F46001F4B96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A5F455F26387F46001F4B96 /* CafeNIBM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A5F456126387F46001F4B96 /* CafeNIBM */ = {
+			isa = PBXGroup;
+			children = (
+				1A79FA2E263A506800CF69F6 /* TableViewCells */,
+				1A49C04C2639F85E008B1DB2 /* Util */,
+				1A5F457A2638FFB7001F4B96 /* Controller */,
+				1A5F45792638FFA6001F4B96 /* Model */,
+				1A5F45782638FF9C001F4B96 /* Views */,
+				1A5F456226387F46001F4B96 /* AppDelegate.swift */,
+				1A5F456426387F46001F4B96 /* SceneDelegate.swift */,
+				1A5F456B26387F48001F4B96 /* Assets.xcassets */,
+				1A5F456D26387F48001F4B96 /* LaunchScreen.storyboard */,
+				1A5F457026387F48001F4B96 /* Info.plist */,
+				1A5F45762638F9F3001F4B96 /* GoogleService-Info.plist */,
+			);
+			path = CafeNIBM;
+			sourceTree = "<group>";
+		};
+		1A5F45782638FF9C001F4B96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A5F456826387F46001F4B96 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A5F45792638FFA6001F4B96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A49C04826399B7A008B1DB2 /* EntityModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A5F457A2638FFB7001F4B96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A5F457B26390388001F4B96 /* SignInViewController.swift */,
+				1A49C04A2639EAC7008B1DB2 /* SignUpViewController.swift */,
+				1A79FA2C263A4A8D00CF69F6 /* FoodViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A79FA2E263A506800CF69F6 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1A79FA2F263A50C300CF69F6 /* FoodTableViewCell.swift */,
+				1A79FA30263A50C300CF69F6 /* FoodTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1D54DB1EA437B8107A0B5F24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E102EEA32B9F82F6B72F422 /* Pods_CafeNIBM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5979191667E402942DFBCF10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B02B544A4E5FBD9969F779D /* Pods-CafeNIBM.debug.xcconfig */,
+				61CCBA94F636E420D17F22FC /* Pods-CafeNIBM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A5F455E26387F46001F4B96 /* CafeNIBM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5F457326387F48001F4B96 /* Build configuration list for PBXNativeTarget "CafeNIBM" */;
+			buildPhases = (
+				12B99E332928BA972B6D45DB /* [CP] Check Pods Manifest.lock */,
+				1A5F455B26387F46001F4B96 /* Sources */,
+				1A5F455C26387F46001F4B96 /* Frameworks */,
+				1A5F455D26387F46001F4B96 /* Resources */,
+				B5F06ACD165F5AFB305372E4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CafeNIBM;
+			productName = CafeNIBM;
+			productReference = 1A5F455F26387F46001F4B96 /* CafeNIBM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A5F455726387F46001F4B96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Rimshan;
+				TargetAttributes = {
+					1A5F455E26387F46001F4B96 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 1A5F455A26387F46001F4B96 /* Build configuration list for PBXProject "CafeNIBM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A5F455626387F46001F4B96;
+			productRefGroup = 1A5F456026387F46001F4B96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A5F455E26387F46001F4B96 /* CafeNIBM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A5F455D26387F46001F4B96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5F456F26387F48001F4B96 /* LaunchScreen.storyboard in Resources */,
+				1A5F45772638F9F3001F4B96 /* GoogleService-Info.plist in Resources */,
+				1A79FA32263A50C300CF69F6 /* FoodTableViewCell.xib in Resources */,
+				1A5F456C26387F48001F4B96 /* Assets.xcassets in Resources */,
+				1A5F456A26387F46001F4B96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12B99E332928BA972B6D45DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CafeNIBM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5F06ACD165F5AFB305372E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeNIBM/Pods-CafeNIBM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeNIBM/Pods-CafeNIBM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeNIBM/Pods-CafeNIBM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A5F455B26387F46001F4B96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5F457C26390388001F4B96 /* SignInViewController.swift in Sources */,
+				1A79FA2D263A4A8D00CF69F6 /* FoodViewController.swift in Sources */,
+				1A5F456326387F46001F4B96 /* AppDelegate.swift in Sources */,
+				1A49C04E2639F88D008B1DB2 /* SessionManager.swift in Sources */,
+				1A49C04926399B7A008B1DB2 /* EntityModel.swift in Sources */,
+				1A79FA31263A50C300CF69F6 /* FoodTableViewCell.swift in Sources */,
+				1A5F456526387F46001F4B96 /* SceneDelegate.swift in Sources */,
+				1A49C04B2639EAC7008B1DB2 /* SignUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A5F456826387F46001F4B96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A5F456926387F46001F4B96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A5F456D26387F48001F4B96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A5F456E26387F48001F4B96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A5F457126387F48001F4B96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A5F457226387F48001F4B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A5F457426387F48001F4B96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B02B544A4E5FBD9969F779D /* Pods-CafeNIBM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CafeNIBM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rimshan.CafeNIBM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A5F457526387F48001F4B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CCBA94F636E420D17F22FC /* Pods-CafeNIBM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CafeNIBM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rimshan.CafeNIBM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A5F455A26387F46001F4B96 /* Build configuration list for PBXProject "CafeNIBM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5F457126387F48001F4B96 /* Debug */,
+				1A5F457226387F48001F4B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A5F457326387F48001F4B96 /* Build configuration list for PBXNativeTarget "CafeNIBM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5F457426387F48001F4B96 /* Debug */,
+				1A5F457526387F48001F4B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A5F455726387F46001F4B96 /* Project object */;
+}
