@@ -10,13 +10,23 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    let sessionMGR = SessionManager()
+    @IBOutlet weak var txtPhone: UILabel!
+    @IBOutlet weak var txtEmail: UILabel!
+    @IBOutlet weak var txtUserName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let user = sessionMGR.getUserData()
+        txtEmail.text = user.userEmail
+        txtUserName.text = user.userName
+        txtPhone.text = user.userPhone
     }
     
 
+    @IBAction func onSignOutPressed(_ sender: UIButton) {
+        let sessionMGR = SessionManager()
+        sessionMGR.clearUserLoggedState()
+    }
     /*
     // MARK: - Navigation
 

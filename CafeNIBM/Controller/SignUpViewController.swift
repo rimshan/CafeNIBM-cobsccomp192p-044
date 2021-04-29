@@ -16,8 +16,12 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var txtPhone: UITextField!
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
+    
+    var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
     }
     
     
@@ -26,69 +30,77 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onSignUpPressed(_ sender: UIButton) {
-        if validateInput(){
-            registerUser(email: txtEmail.text!, password: txtPassword.text!)
-        }else{
-            print("Input validatation failed")
+        
+        
+        if !InputValidator.isValidName(name: txtName.text ?? ""){
+            Loaf("Invalid name", state: .error, sender:self).show()
+            return
         }
+            
+            
+        if !InputValidator.isValidEmail(email: txtEmail.text ?? ""){
+            Loaf("Invalid email address", state: .error, sender:self).show()
+            return
+        }
+               
+        if !InputValidator.isValidPassword(pass: txtPassword.text ?? "", minLength: 6, maxLength: 50){
+            Loaf("Invalid password", state: .error, sender:self).show()
+            return
+        }
+        
+        if !InputValidator.isValidMobileNo(txtPhone.text ?? ""){
+            Loaf("Invalid phone number", state: .error, sender:self).show()
+            return
+        }
+        
+        let user = User(userName: txtName.text ?? "", userEmail: txtEmail.text ?? "", userPassword: txtPassword.text ?? "", userPhone: txtPhone.text ?? "")
+        
+        registerUser(user: user)
+        
+
     }
     
-    func registerUser(email: String, password:String){
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+    func registerUser(user: User){
+        Auth.auth().createUser(withEmail: user.userEmail, password: user.userPassword) { authResult, error in
             if let err = error{
                 print(err.localizedDescription)
                 Loaf("User sign up failed", state: .error, sender:self).show()
                 return
             }
             
-            if let result = authResult{
-                Loaf("User registered successfully", state: .success, sender:self).show()
-                print("User registered successfully with  email :\(result.user.email ?? "Not Found")")
-            }
+            self.saveUserData(user: user)
+            
         }
     }
     
-    func validateInput() -> Bool{
-        guard let name = txtPassword.text else {
-            print("Name is required")
-            return false
-        }
+    func saveUserData(user: User){
         
-        guard let email = txtEmail.text else{
-            print("Email is required")
-            return false
+        let userData = [
+            "userName" : user.userName,
+            "userEmail" : user.userEmail,
+            "userPhone" : user.userPhone,
+            "userPassword" : user.userPassword
+        ]
+
+        self.ref.child("users")
+            .child(user.userEmail
+                .replacingOccurrences(of: "@", with: "_")
+                .replacingOccurrences(of: ".", with: "_"))
+        .setValue(userData){
+            (error, ref) in
+           if let err = error{
+             print(err.localizedDescription)
+             Loaf("User data not save on database failed", state: .error, sender:self).show()
+             return
+           }
+            
+            Loaf("User data saveed on database", state: .success, sender:self).show{
+                type in
+                self.dismiss(animated: true, completion: nil)
+            }
         }
-        
-        guard let phone = txtPhone.text else {
-            print("Phone is required")
-            return false
-        }
-        
-        guard let password = txtPassword.text else{
-            print("Password is required")
-            return false
-        }
-        
-        if name.count < 5 {
-            print("Enter valid name")
-            return false
-        }
-        if email.count < 5 {
-            print("Enter valid email")
-            return false
-        }
-        if phone.count < 10 {
-            print("Enter valid phone number")
-            return false
-        }
-        if password.count < 5 {
-            print("Enter strong password")
-            return false
-        }
-        
-        return true
-        
-      
+       
         
     }
+    
 }
