@@ -90,11 +90,11 @@ class SignUpViewController: UIViewController {
             (error, ref) in
            if let err = error{
              print(err.localizedDescription)
-             Loaf("User data not save on database failed", state: .error, sender:self).show()
+             Loaf("User data save on database failed", state: .error, sender:self).show()
              return
            }
             
-            Loaf("User data saveed on database", state: .success, sender:self).show{
+            Loaf("User data saved on database", state: .success, sender:self).show{
                 type in
                 self.dismiss(animated: true, completion: nil)
             }
