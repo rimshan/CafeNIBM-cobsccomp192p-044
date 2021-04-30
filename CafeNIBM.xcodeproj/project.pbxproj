@@ -23,6 +23,9 @@
 		1AF137B8263B35B000E35754 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF137B7263B35B000E35754 /* InputValidator.swift */; };
 		1AF137BA263B5D9200E35754 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF137B9263B5D9200E35754 /* ProfileViewController.swift */; };
 		1AF137BC263B615100E35754 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF137BB263B615100E35754 /* LaunchViewController.swift */; };
+		1AF137BE263BA84A00E35754 /* FoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF137BD263BA84A00E35754 /* FoodItemViewController.swift */; };
+		1AF137C0263BAEF000E35754 /* CartHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF137BF263BAEF000E35754 /* CartHandler.swift */; };
+		1AF137C2263BB3B500E35754 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF137C1263BB3B500E35754 /* CartViewController.swift */; };
 		6F7FBBED0D5303C888060F00 /* Pods_CafeNIBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E102EEA32B9F82F6B72F422 /* Pods_CafeNIBM.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,9 @@
 		1AF137B7263B35B000E35754 /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		1AF137B9263B5D9200E35754 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1AF137BB263B615100E35754 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		1AF137BD263BA84A00E35754 /* FoodItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemViewController.swift; sourceTree = "<group>"; };
+		1AF137BF263BAEF000E35754 /* CartHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartHandler.swift; sourceTree = "<group>"; };
+		1AF137C1263BB3B500E35754 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		61CCBA94F636E420D17F22FC /* Pods-CafeNIBM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNIBM.release.xcconfig"; path = "Target Support Files/Pods-CafeNIBM/Pods-CafeNIBM.release.xcconfig"; sourceTree = "<group>"; };
 		6E102EEA32B9F82F6B72F422 /* Pods_CafeNIBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeNIBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +73,7 @@
 			children = (
 				1A49C04D2639F88D008B1DB2 /* SessionManager.swift */,
 				1AF137B7263B35B000E35754 /* InputValidator.swift */,
+				1AF137BF263BAEF000E35754 /* CartHandler.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -131,6 +138,8 @@
 				1A79FA2C263A4A8D00CF69F6 /* FoodViewController.swift */,
 				1AF137B9263B5D9200E35754 /* ProfileViewController.swift */,
 				1AF137BB263B615100E35754 /* LaunchViewController.swift */,
+				1AF137BD263BA84A00E35754 /* FoodItemViewController.swift */,
+				1AF137C1263BB3B500E35754 /* CartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,13 +289,16 @@
 			files = (
 				1A5F457C26390388001F4B96 /* SignInViewController.swift in Sources */,
 				1A79FA2D263A4A8D00CF69F6 /* FoodViewController.swift in Sources */,
+				1AF137C2263BB3B500E35754 /* CartViewController.swift in Sources */,
 				1AF137BA263B5D9200E35754 /* ProfileViewController.swift in Sources */,
 				1A5F456326387F46001F4B96 /* AppDelegate.swift in Sources */,
+				1AF137C0263BAEF000E35754 /* CartHandler.swift in Sources */,
 				1A49C04E2639F88D008B1DB2 /* SessionManager.swift in Sources */,
 				1AF137B8263B35B000E35754 /* InputValidator.swift in Sources */,
 				1A49C04926399B7A008B1DB2 /* EntityModel.swift in Sources */,
 				1A79FA31263A50C300CF69F6 /* FoodTableViewCell.swift in Sources */,
 				1AF137BC263B615100E35754 /* LaunchViewController.swift in Sources */,
+				1AF137BE263BA84A00E35754 /* FoodItemViewController.swift in Sources */,
 				1A5F456526387F46001F4B96 /* SceneDelegate.swift in Sources */,
 				1A49C04B2639EAC7008B1DB2 /* SignUpViewController.swift in Sources */,
 			);
